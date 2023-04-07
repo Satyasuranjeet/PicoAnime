@@ -30,7 +30,7 @@
 <body>
    <h1 class="satya">Contact</h1>
 
-	<form action="mail.php" method="post">
+	<form method="post" autocomplete="off" name="google-sheet">
     <label for="name">Your Name</label>
     <input type="text"  name="name" placeholder="Your name..">
     <label for="lname">Email</label>
@@ -38,8 +38,19 @@
    
     <label for="message">Message</label>
     <textarea  name="message" placeholder="Write something.." style="height:200px"></textarea>
-    <input type="submit" value="Submit">
+    <input type="submit" name="submit" value="Submit">
   </form>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzo8k4G50mL-2NNZhqEryJPfhToRlQb2b3X9JRFHgAf6-6k2RpRKgiM3ymGhuGeGrI5/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </body>
 <footer>

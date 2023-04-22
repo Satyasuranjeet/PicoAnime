@@ -4,9 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Form</title>
+  <title>About Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="about.css">
 </head>
 <header>
   <div class="logo">
@@ -17,7 +21,7 @@
       <li><a href="../../index.html">Home</a></li>
       <li><a href="../../services.html">How to Contribute ?</a></li>
       <li><a href="../../Contact/phpmail/form.html">Contact</a></li>
-      <li><a href="../../About/about.html">About Us</a></li>
+      <li><a href="#">About Us</a></li>
     </ul>
     <div class="dropdown">
       <button class="dropbtn">&#9776;</button>
@@ -25,37 +29,35 @@
         <a href="../../index.html">Home</a>
         <a href="../../services.html">How to Contribute ?</a>
         <a href="../../Contact/phpmail/form.html">Contact</a>
-        <a href="../../About/about.html">About Us</a>
+        <a href="#">About Us</a>
       </div>
     </div>
   </nav>
 </header>
 
 <body>
-  <h1 class="satya">Contact</h1>
+  <h1 class="header">About Us</h1>
+  <div class="container">
+    <div class="left">
+      <section class="about-para">
+        <p class="para-1"><img src="connection.gif" class="img-gif"> We make our Visitors dive into the Collection of
+          <br><span class="sp-main"><span class="sp-1">Action-packed</span>, <span class="sp-1">Overpowered</span> game
+            of
+            Cards.</span>
+        </p>
+        <p class="para-2"><img src="connection.gif" class="img-gif"> We show glimpse of Characters with <span
+            class="sp-1">Hidden Powers</span> which
+          <span class="sp-main">will make your Jaw-Drop.</span>
+        </p>
+        <p class="para-3"><img src="connection.gif" class="img-gif"> We provide <span class="sp-1">mesmerizing</span>,
+          <span class="sp-1">High-quality</span> content in the <span class="sp-main"> world of Anime.</span>
+      </section>
+    </div>
 
-  <form method="post" autocomplete="off" name="google-sheet">
-    <label for="name">Your Name</label>
-    <input type="text" name="name" placeholder="Your name..">
-    <label for="lname">Email</label>
-    <input type="email" name="email" placeholder="Your email..">
-
-    <label for="message">Message</label>
-    <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
-    <input type="submit" name="submit" value="Submit">
-  </form>
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzo8k4G50mL-2NNZhqEryJPfhToRlQb2b3X9JRFHgAf6-6k2RpRKgiM3ymGhuGeGrI5/exec'
-    const form = document.forms['google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
+    <div class="right">
+      <img src="all-in-one.png" class="about-img" alt="Anime-Characters">
+    </div>
+  </div>
 </body>
 <footer>
   <div class="f-container">

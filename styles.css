@@ -44,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #000000;
+  color:white;
   text-decoration: none;
   font-size: 22px;
   font-family: fantasy;
@@ -75,7 +75,7 @@ nav ul li a {
 }
 
 .dropdown-content a {
-  color: #f6f6f6;
+  color:black;
   padding: 10px 15px;
   text-decoration: none;
   display: block;
@@ -115,7 +115,7 @@ a:hover{
 .container {
   overflow: hidden;
   box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
-  background-color: linear-gradient(28deg, #719bbe, #f7bd9c, #ecf7b3, #c6fabb, #ebbdbd );;
+  background-color: linear-gradient(28deg, #719bbe, #f7bd9c, #ecf7b3, #c6fabb, #ebbdbd );
   text-align: center;
   border-radius: 6rem;
   position: relative;

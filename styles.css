@@ -232,7 +232,7 @@ th{
   src: url('fonts/horizon.otf'); /* Set the URL to the font file */
 }
 .tt1{
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   text-align: center;
   font-size: 60px;
   font-family:myFont;
@@ -242,7 +242,7 @@ th{
 
 }
 .tt{
-  margin-top: 100px;
+  margin-top: 120px;
   text-align: center;
   font-size: 60px;
   font-family: myFont1;

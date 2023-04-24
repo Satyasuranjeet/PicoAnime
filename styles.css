@@ -9,7 +9,7 @@
 }
 
 body {
-  color: var(--clr-gray);
+  background: linear-gradient(72deg, rgb(44, 222, 242) 0.00%, rgb(156, 43, 171) 35.00%, rgb(39, 43, 44) 100.00%);  
   
 }
 header {
@@ -21,7 +21,7 @@ header {
 }
 
 .logo img {
-  width: 150px;
+  width: 190px;
 }
 
 nav {
@@ -44,9 +44,9 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #000000;
+  color:white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   font-family: fantasy;
 }
 
@@ -75,7 +75,7 @@ nav ul li a {
 }
 
 .dropdown-content a {
-  color: #f6f6f6;
+  color:black;
   padding: 10px 15px;
   text-decoration: none;
   display: block;
@@ -83,7 +83,7 @@ nav ul li a {
   font-family: fantasy;
 }
 a:hover{
-  color:rgb(0, 238, 255);
+  color:cyan;
   letter-spacing: 4px;
 }
 
@@ -115,9 +115,9 @@ a:hover{
 .container {
   overflow: hidden;
   box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
-  background-color: rgb(255, 255, 255);
+  background-color: linear-gradient(28deg, #719bbe, #f7bd9c, #ecf7b3, #c6fabb, #ebbdbd );
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 6rem;
   position: relative;
   margin: 0;
 }
@@ -128,7 +128,7 @@ a:hover{
 }
 
 .container .card .face {
-  width: 300px;
+  width: 320px;
   height: 200px;
   transition: 0.5s;
   outline: none;
@@ -136,7 +136,7 @@ a:hover{
 
 .container .card .face.face1 {
   position: relative;
-  background: #455972;
+  background: linear-gradient(#2b1055,#7597de);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,7 +153,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
 .container .card .face.face1 .content {
-  opacity: 0.2;
+  opacity: 0.6;
   transition: 0.5s;
 }
 
@@ -223,14 +223,31 @@ tr{
 th{
     margin: 30px;
 }
-
-.tt{
-  margin-top: 100px;
+@font-face {
+  font-family: myFont; /* Set a font family name */
+  src: url('fonts/horizon_outlined.otf'); /* Set the URL to the font file */
+}
+@font-face {
+  font-family: myFont1; /* Set a font family name */
+  src: url('fonts/horizon.otf'); /* Set the URL to the font file */
+}
+.tt1{
+  margin-bottom: 50px;
   text-align: center;
-  font-size: 30px;
-  font-family: fantasy;
-  letter-spacing: 10px;
-  color: rgb(0, 0, 0);
+  font-size: 60px;
+  font-family:myFont;
+  letter-spacing: 5px;
+  color:cyan;
+  
+
+}
+.tt{
+  margin-top: 120px;
+  text-align: center;
+  font-size: 60px;
+  font-family: myFont1;
+  letter-spacing: 5px;
+  color: cyan;
   
 }
 .Saa{

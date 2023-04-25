@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
@@ -9,19 +7,27 @@
 }
 
 body {
-  background: linear-gradient(72deg, rgb(44, 222, 242) 0.00%, rgb(156, 43, 171) 35.00%, rgb(39, 43, 44) 100.00%);  
-  
+  background: linear-gradient(72deg, rgb(44, 222, 242) 0.00%, rgb(156, 43, 171) 35.00%, rgb(39, 43, 44) 100.00%);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(199, 252, 252);
+  min-height: 100vh;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px;
   color: #fff;
+  margin-bottom: 20px;
+  background: #0f0f2375;
 }
 
 .logo img {
-  width: 190px;
+  margin-left: 20px;
+  height: 77px;
+  width: 163px;
 }
 
 nav {
@@ -44,49 +50,56 @@ nav ul li {
 }
 
 nav ul li a {
-  color:white;
+  color: white;
   text-decoration: none;
   font-size: 22px;
   font-family: fantasy;
 }
 
 .dropdown {
-  margin-right: 0px;
+  margin-right: 20px;
   position: relative;
   display: inline-block;
 }
 
 .dropbtn {
-  font-size: 16px;
+  font-size: 21px;
   border: none;
+  border-radius: 5px;
   background-color: #00808f;
   color: #fff;
-  padding: 10px 15px;
+  padding: 7px 11px;
   cursor: pointer;
 }
 
 .dropdown-content {
-  margin-left: -130px;
+  margin-left: -190px;
   display: none;
   position: absolute;
-  background-color: #333;
-  min-width: 160px;
+  background-color: #333333d4;
+  min-width: 235px;
+  border-radius: 5px 5px 0 0;
   z-index: 1;
 }
 
 .dropdown-content a {
-  color:black;
+  color: wheat;
   padding: 10px 15px;
   text-decoration: none;
   display: block;
   font-size: 18px;
   font-family: fantasy;
 }
-a:hover{
-  color:cyan;
-  letter-spacing: 4px;
+
+a:hover {
+  color: cyan;
+  letter-spacing: 3px;
 }
 
+#contribute a:hover,
+#about a:hover {
+  letter-spacing: 1px;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -98,11 +111,14 @@ a:hover{
     flex-direction: row;
     justify-content: flex-end;
   }
+
   nav ul li {
+    width: auto;
     margin: 0 10px;
     text-align: left;
     padding: 0;
   }
+
   .dropdown {
     display: none;
   }
@@ -111,11 +127,11 @@ a:hover{
 
 
 
- 
+
 .container {
   overflow: hidden;
   box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
-  background-color: linear-gradient(28deg, #719bbe, #f7bd9c, #ecf7b3, #c6fabb, #ebbdbd );
+  background-color: linear-gradient(28deg, #719bbe, #f7bd9c, #ecf7b3, #c6fabb, #ebbdbd);
   text-align: center;
   border-radius: 6rem;
   position: relative;
@@ -136,13 +152,13 @@ a:hover{
 
 .container .card .face.face1 {
   position: relative;
-  background: linear-gradient(#2b1055,#7597de);
+  background: linear-gradient(#2b1055, #7597de);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
   transform: translateY(100px);
-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
 .container .card:hover .face.face1 {
@@ -209,55 +225,69 @@ box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   background: #333;
   color: #fff;
 }
+
 .wrapper-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 20rem);
   justify-content: center;
 }
-table{
+
+table {
   margin: 0;
 }
-tr{
+
+tr {
   margin: 30px;
 }
-th{
-    margin: 30px;
+
+th {
+  margin: 30px;
 }
+
 @font-face {
-  font-family: myFont; /* Set a font family name */
-  src: url('fonts/horizon_outlined.otf'); /* Set the URL to the font file */
+  font-family: myFont;
+  /* Set a font family name */
+  src: url('fonts/horizon_outlined.otf');
+  /* Set the URL to the font file */
 }
+
 @font-face {
-  font-family: myFont1; /* Set a font family name */
-  src: url('fonts/horizon.otf'); /* Set the URL to the font file */
+  font-family: myFont1;
+  /* Set a font family name */
+  src: url('fonts/horizon.otf');
+  /* Set the URL to the font file */
 }
-.tt1{
+
+.tt1 {
   margin-bottom: 50px;
   text-align: center;
   font-size: 60px;
-  font-family:myFont;
+  font-family: myFont;
   letter-spacing: 5px;
-  color:cyan;
-  
+  color: cyan;
+
 
 }
-.tt{
+
+.tt {
   margin-top: 120px;
   text-align: center;
   font-size: 60px;
   font-family: myFont1;
   letter-spacing: 5px;
   color: cyan;
-  
+
 }
-.Saa{
-  width:100%;
+
+.Saa {
+  width: 100%;
   height: 50%;
 }
 
 footer {
+  margin-top: auto;
   background-color: #f2f2f2;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .f-container {
@@ -268,7 +298,8 @@ footer {
 .footer-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  align-items: center;
 }
 
 .footer-col {
@@ -294,76 +325,81 @@ footer {
   font-size: 20px;
   color: #333;
 }
-.para{
-        margin-top: 20px;
-}
 
 @media screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
     text-align: center;
   }
+
   .footer-col {
     flex-basis: 100%;
     margin-bottom: 20px;
   }
-  .social-icons{
+
+  .social-icons {
     margin-right: 30px;
   }
 }
 
-.contact{
-	font-family: arial;
-	font-size: 16px;
-	margin: 0;
-	background: #fff;
-	color: #000;
+.contact {
+  font-family: arial;
+  font-size: 16px;
+  margin: 0;
+  background: #fff;
+  color: #000;
 
-	display: flex;
-	align-items:center;
-	justify-content: space-around;
-	min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
 }
 
-.form-container{
-	width: 100%;
-	max-width: 600px;
-	margin:0 auto;
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
   background: #09aad0;
   padding: 20px;
   border-radius: 10px;
   color: #fff;
 }
-.input-row{
+
+.input-row {
   margin-bottom: 10px;
 }
-.input-row label{
-	display: block;
-	margin-bottom: 3px;
+
+.input-row label {
+  display: block;
+  margin-bottom: 3px;
 }
+
 .input-row input,
-.input-row textarea{
-	width: 100%;
-	padding: 10px;
-	border:0;
-	border-radius: 3px;
-	outline: 0;
-	margin-bottom: 3px;
-	font-size: 18px;
-	font-family: arial;
+.input-row textarea {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  margin-bottom: 3px;
+  font-size: 18px;
+  font-family: arial;
 }
-.input-row textarea{
-	height: 100px;
+
+.input-row textarea {
+  height: 100px;
 }
+
 .input-row input[type="submit"] {
   width: 100px;
-  margin:0 auto;
+  margin: 0 auto;
   display: block;
-  text-align: center; 
+  text-align: center;
   background: #002f3a;
   color: #ffffff;
   cursor: pointer;
 }
+
 .success {
   background-color: #9fd2a1;
   padding: 5px 10px;
@@ -373,9 +409,3 @@ footer {
   font-size: 14px;
   margin-top: 10px;
 }
-
-
-
-
-
-

@@ -31,14 +31,14 @@
 .right {
   /* position: relative; */
   margin-right: 5px;
-  width: 40rem;
+  width: 43rem;
   border: 2px solid red;
   box-shadow: 10px 5px 5px red;
 }
 
 .left {
   font-size: 25px;
-  width: 30rem;
+  width: 25rem;
   text-align: center;
   margin: auto 10px auto 25px;
 }

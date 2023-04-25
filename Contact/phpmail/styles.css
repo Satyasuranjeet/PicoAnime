@@ -1,6 +1,6 @@
 form {
     margin: 20px auto;
-    min-width: 500px;
+    max-width: 500px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -42,5 +42,5 @@ form {
             background: -webkit-linear-gradient(#e600ff, #0234ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
 }  

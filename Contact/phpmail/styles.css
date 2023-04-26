@@ -1,90 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    width: 100%;
-}
-
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10000;
-}
-
-header #logo {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 2em;
-    font-weight: 700;
-    letter-spacing: 12px;
-    padding-left: 60px;
-}
-
-header ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 20px;
-    margin: 30px;
-}
-
-header ul li {
-    list-style: none;
-    margin-left: 20px;
-}
-
-header ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 6px 15px;
-    border-radius: 20px;
-}
-
-header ul li a:hover,
-header ul li a.active {
-    background: #fff;
-    cursor: pointer;
-    color: #2b1055;
-}
-
-header {
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
 form {
     margin: 20px auto;
     max-width: 500px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-label {
+  }
+  
+  label {
     display: block;
     margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    font-family: 'Poppins', sans-serif;
-    padding: 13px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 5px;
     margin-bottom: 10px;
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-}
-
-input[type="submit"] {
+  }
+  
+  input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -92,18 +30,17 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-}
-
-input[type="submit"]:hover {
+  }
+  
+  input[type="submit"]:hover {
     background-color: #3e8e41;
-}
-
-.satya {
-    text-align: center;
-    font-size: 60px;
-    font-family: fantasy;
-    background: -webkit-linear-gradient(#e600ff, #0234ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 50px;
-}
+  }
+.satya{
+            text-align: center;
+            font-size: 60px;
+            font-family: fantasy;
+            background: -webkit-linear-gradient(#e600ff, #0234ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 50px;
+}  

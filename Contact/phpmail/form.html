@@ -36,12 +36,12 @@
 
   <form method="post" autocomplete="off" name="google-sheet">
     <label for="name">Your Name</label>
-    <input type="text" name="name" placeholder="Your name..">
+    <input type="text" name="name" pattern="[A-Za-z]{1,32}" required placeholder="Your name..">
     <label for="lname">Email</label>
-    <input type="email" name="email" placeholder="Your email..">
+    <input type="email" name="email" required placeholder="Your email..">
 
     <label for="message">Message</label>
-    <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
+    <textarea name="message" required placeholder="Write something.." style="height:200px"></textarea>
     <input type="submit" name="submit" value="Submit">
   </form>
   <script>

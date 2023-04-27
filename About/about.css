@@ -1,8 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  overflow: hidden;
+  /* box-sizing: border-box; */
+  /* overflow: hidden; */
 }
 
 .header {
@@ -12,7 +12,7 @@
   background: -webkit-linear-gradient(#e600ff, #0234ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .container {
@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  gap: 5px;
 }
 
 .about-img {
@@ -31,8 +32,14 @@
   /* position: relative; */
   margin-right: 5px;
   width: 50%;
+}
+
+.anime-video {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
   border: 2px solid red;
-  box-shadow: 10px 5px 5px red;
+  box-shadow: -10px -15px 5px rgb(5, 5, 5);
 }
 
 .left {
@@ -40,12 +47,10 @@
   width: 50rem;
   text-align: center;
   margin-right: 5px;
-
 }
 .about-para {
   /* width: 60%; */
   text-align: left;
-  /* border: 2px solid blue; */
   line-height: 35px;
   height: 60vh;
   margin-top: 20px;
@@ -56,7 +61,8 @@ p {
 }
 
 .para-1,
-.para-2 ,.para-3{
+.para-2,
+.para-3 {
   margin-bottom: 20px;
   /* border-left: 5px solid rgb(46, 195, 200); */
 }
@@ -64,14 +70,19 @@ p {
 .sp-1 {
   font-family: "Bruno Ace SC", cursive;
   text-decoration: underline wavy;
-  text-decoration-color: rgb(135, 21, 236);
-  color: #0234ff;
+  text-decoration-color: rgb(45, 203, 221);
+  color: rgb(231, 191, 16);
   /* margin-left: 30px; */
 }
 .sp-main {
   margin-left: 50px;
 }
-.img-gif {
-  width: 40px;
-  height: 40px;
+p {
+  font-weight: 500;
 }
+.img-gif {
+  width: 50px;
+  height: 50px;
+}
+
+
